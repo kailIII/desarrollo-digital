@@ -1,0 +1,241 @@
+/* Font Face */
+@font-face {
+  font-family: 'gobCLBold';
+  src: url('../fonts/gobcl_bold-webfont.eot');
+  src: url('../fonts/gobcl_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gobcl_bold-webfont.woff') format('woff'), url('../fonts/gobcl_bold-webfont.ttf') format('truetype'), url('../fonts/gobcl_bold-webfont.svg#gobCLBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gobCLLight';
+  src: url('../fonts/gobcl_light-webfont.eot');
+  src: url('../fonts/gobcl_light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gobcl_light-webfont.ttf') format('truetype'), url('../fonts/gobcl_light-webfont.svg#gobCLLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gobCLRegular';
+  src: url('../fonts/gobcl_regular-webfont.eot');
+  src: url('../fonts/gobcl_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gobcl_regular-webfont.ttf') format('truetype'), url('../fonts/gobcl_regular-webfont.svg#gobCLRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gobCLHeavy';
+  src: url('../fonts/gobcl_heavy-webfont.eot');
+  src: url('../fonts/gobcl_heavy-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/gobcl_heavy-webfont.ttf') format('truetype'), url('../fonts/gobcl_heavy-webfont.svg#gobCLRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Main style */
+body {
+	font-family: "gobCLRegular", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+	margin-bottom: 0px;
+	border-radius: 0;
+}
+
+.navbar-placeholder {
+	height: 202px;
+}
+
+.section {
+	background-size: 100% ;
+	background-color: #f4f2ee;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding-bottom: 100px;
+	h1 {
+		font-size: 80px;
+		color: #ffffff;
+		font-family: "gobCLHeavy", Arial, Helvetica, sans-serif;
+		margin: 250px 0px 40px 0px;
+	}
+	.destacado {
+		background-color: rgba(0,0,0,0.6);
+		padding: 40px 0px;
+	}
+	p {
+		font-size: 30px;
+		color: #ffffff;
+		margin-bottom: 10px;	
+	}
+	.planes-container {
+		border: 1px solid #FFFFFF;
+		border-width: 1px 0px;
+		.planes {
+			padding: 0;
+			.thumbnail {
+				background-color: transparent;
+				border-radius: 0px;
+				border-width: 0px;
+				background-image: url('../img/plan.png');
+				background-position: center left;
+				background-repeat: no-repeat;
+				padding-left: 60px;
+				margin: 10px 0px;
+				min-height: 120px;
+				.caption {
+					padding-right: 90px;
+					 p {
+						font-family: "gobCLLight", Arial, Helvetica, sans-serif;
+						font-style: italic;
+						font-size: 20px;
+						strong {
+							font-style: normal;
+							font-family: "gobCLHeavy", Arial, Helvetica, sans-serif;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.secundaria {
+	background-color: #FFFFFF;
+	color: #545e69;
+	padding: 50px 100px;
+	h3 {
+		font-size: 30px;
+		font-family: "gobCLHeavy", Arial, Helvetica, sans-serif;
+		margin-top: 50px;
+	}
+	p {
+		font-size: 20px;
+		color: #545e69;
+		margin-bottom: 20px
+	}
+	ul {
+		li{
+			font-size: 20px;
+		}
+	}
+}
+
+.navbar-default {
+	background: transparent;
+	border: none;
+	font-family: "gobCLHeavy", Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	line-height: 30px;
+	.navbar-collapse {
+		border-bottom: 1px solid #FFFFFF;
+		border-top: 1px solid #FFFFFF;
+		padding: 0px;
+		overflow: hidden;
+	}
+	.navbar-nav {
+		li {
+			a {
+				color: #FFFFFF;
+				padding: 20px;
+				&.selected,
+				&:hover,
+				&:focus{
+					color: #FFFFFF;
+					background-color: #ff7e00; 
+				}
+			}
+		}
+		.open {
+			a, a:hover, a:focus {
+				background-color: #ff7e00;
+				color: #FFFFFF;
+			}
+			.dropdown-menu{
+				li {
+					a {
+						color: #FFFFFF;
+					}
+				}
+			}
+		}
+		.dropdown-menu{
+			background-color: #ff7e00;
+			border-radius: 0px;
+			li {
+				a {
+					color: #FFFFFF;
+					font-size: 20px;
+					padding: 10px 30px;
+					&:hover {
+						color: #000000;
+					}
+				}
+			}
+		}
+	}
+
+	.container {
+		margin-bottom: 140px;
+	}
+	&.sticky {
+		width: 100%;
+		background: rgba(0, 0, 0, 0.7);
+		z-index: 100;
+		.navbar-collapse {
+			border: none;
+		}
+		.container {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+footer {
+  .area1 {
+    background: #2C384F;
+    .navbar-inverse {
+		font-family: "gobCLHeavy", Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		background-color: #2d3850;
+		border: none;
+		.navbar-nav>li{
+			float: left;
+	        border-left: 1px solid #404C61;
+	        &:last-child {
+	          border-right: 1px solid #404C61;
+	        }
+		}
+		.navbar-nav>li>a {
+          display: block;
+          padding: 20px 35px;
+          color: #fff;
+          font-size: 16px;
+          line-height: 26px;
+          &:hover {
+            text-decoration: none;
+            background: #1B2437;
+          }
+		}
+	}
+  }
+  .area2 {
+    background: #1B2437;
+    padding: 20px 0;
+    color: #fff;
+    h3 {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0;
+    }
+    a {
+      color: #fff;
+    }
+    ul {
+      padding-left: 15px;
+    }
+    .social {
+      margin-top: 50px;
+      text-align: right;
+    }
+    .politicas {
+      margin-top: 10px;
+      text-align: right;
+    }
+  }
+}
