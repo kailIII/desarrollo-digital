@@ -13,6 +13,7 @@ sess_*
 *.swo
 *.sh
 site/config-dev.php
+site/config.php
 site/assets/logs
 site/assets/files
 site/assets/sessions
