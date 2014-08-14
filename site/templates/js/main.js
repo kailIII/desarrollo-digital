@@ -12,11 +12,12 @@ var Frontend;
 
 	Frontend.sticky_navigation_offset_top = 0;
 
+	Frontend.env = '';
+
 	Frontend.init = function(){
 		//Headings
 		$('.section').each(function(i,e){
 			Frontend.initial_pos.push({name:e.id,value:$('#'+e.id).offset().top});
-			//Frontend.parallax(e);
 		});
 
 		//scroll event
@@ -31,20 +32,16 @@ var Frontend;
 
 		Frontend.scrollToLink();
 
-		skrollr.init({
-			forceHeight: false,
-		});
+		Frontend.env = this.getBootstrapEnvironment();
 
-	};
+		if($.inArray( Frontend.env, ["ExtraSmall", "Small"] ) < 0){
+			skrollr.init({
+				forceHeight: false,
+			});
+		} else {
+			$('.section').css('background-size','cover');
+		}
 
-	Frontend.parallax = function(obj){
-		var $scroll = $(obj);
-
-		$(window).scroll(function() {
-			var yPos = -(Frontend.$window.scrollTop() / 10);
-			var coords = '50% '+ yPos + 'px';
-			$scroll.css({ backgroundPosition: coords });
-		});
 	};
 
 	Frontend.update_menu = function(){
@@ -89,6 +86,23 @@ var Frontend;
 	            }
 	        }
 	    });
+	};
+
+	Frontend.getBootstrapEnvironment = function() {
+	    var envs = ["ExtraSmall", "Small", "Medium", "Large"];
+	    var envValues = ["xs", "sm", "md", "lg"];
+
+	    var $el = $('<div>');
+	    $el.appendTo($('body'));
+
+	    for (var i = envValues.length - 1; i >= 0; i--) {
+	        var envVal = envValues[i];
+	        $el.addClass('hidden-'+envVal);
+	        if ($el.is(':hidden')) {
+	            $el.remove();
+	            return envs[i]
+	        }
+	    }
 	};
 
 })(window, document,jQuery,skrollr);

@@ -12,7 +12,7 @@
                 data-center-top="background-position:0px 0px;" 
                 data-top-bottom="background-position:0px -50px;"
                 >
-                <div class="container">
+                <div id="header-container" class="container">
                     <h1><?php echo $page->title;?></h1>
                 </div>
                 <div class="destacado">
