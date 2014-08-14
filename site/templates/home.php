@@ -29,50 +29,51 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Static navbar -->
-                    <div class="navbar-placeholder">
-                        <div class="navbar navbar-default" role="navigation">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8 col-md-offset-2">
-                                        <div class="navbar-header">
-                                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                                <span class="sr-only">Toggle navigation</span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                                <span class="icon-bar"></span>
-                                            </button>
+                        <!-- Static navbar -->
+                        <div class="navbar-placeholder">
+                            <div class="navbar navbar-default" role="navigation">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-8 col-md-offset-2">
+                                            <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                            </div>
+                                            <div class="navbar-collapse collapse">
+                                                <ul class="nav navbar-nav">
+                                                    <?php
+                                                    $menu = '';
+                                                    //Principal
+                                                    foreach($root->children()->sort("order") as $principal) {
+                                                        //Secundaria
+                                                        $secundarias = $principal->children()->sort("order");
+                                                        if($secundarias->count()){
+                                                            $menu .= "<li class='dropdown'>
+                                                                        <a id='section-{$principal->id}-anchor' href='javascript:;' class='dropdown-toggle' data-toggle='dropdown'>$principal->title<span class='caret'></span></a>
+                                                                        <ul class='dropdown-menu' role='menu'>";
+                                                            $menu .=     "<li><a class='scrollToLink' href='#section-{$principal->id}'>Introducción</a></li>";
+                                                        }else{
+                                                            $menu .= "<li><a class='scrollToLink' href='#section-{$principal->id}'>{$principal->title}</a></li>";
+                                                        }
+                                                        foreach($secundarias as $secundaria){
+                                                            $menu .= "<li><a class='scrollToLink scrollToLinkSecundaria' href='#section-{$secundaria->id}'>{$secundaria->title}</a></li>";
+                                                        }
+                                                        $menu .= ($secundarias->count())?'</ul></li>':'';
+                                                    }
+                                                    echo $menu;
+                                                    ?>
+                                                </ul>
+                                            </div><!--/.nav-collapse -->
                                         </div>
-                                        <div class="navbar-collapse collapse">
-                                            <ul class="nav navbar-nav">
-                                                <?php
-                                                $menu = '';
-                                                //Principal
-                                                foreach($root->children()->sort("order") as $principal) {
-                                                    //Secundaria
-                                                    $secundarias = $principal->children()->sort("order");
-                                                    if($secundarias->count()){
-                                                        $menu .= "<li class='dropdown'>
-                                                                    <a id='section-{$principal->id}-anchor' href='javascript:;' class='dropdown-toggle' data-toggle='dropdown'>$principal->title<span class='caret'></span></a>
-                                                                    <ul class='dropdown-menu' role='menu'>";
-                                                    }else{
-                                                        $menu .= "<li><a class='scrollToLink' href='#section-{$principal->id}'>{$principal->title}</a></li>";
-                                                    }
-                                                    foreach($secundarias as $secundaria){
-                                                        $menu .= "<li><a class='scrollToLink scrollToLinkSecundaria' href='#section-{$secundaria->id}'>{$secundaria->title}</a></li>";
-                                                    }
-                                                    $menu .= ($secundarias->count())?'</ul></li>':'';
-                                                }
-                                                echo $menu;
-                                                ?>
-                                            </ul>
-                                        </div><!--/.nav-collapse -->
                                     </div>
-                                </div>
-                            </div><!--/.container-fluid -->
-                        </div>
-                    </div>
+                                </div><!--/.container-fluid -->
+                            </div>
+                        </div> <!--/.placeholder -->
+                    </div><!-- Destacado navbar -->
 
                 </div> <!--/.trama -->
             </div>
@@ -81,8 +82,9 @@
 
             <?php
             //Principal
+            $imgIndex = 1;
             foreach($root->children()->sort("order") as $principal) {
-                echo '<div id="section-'.$principal->id.'" class="row section" style="background-image: url(\''. $page->images->pop()->url .'\')"'.
+                echo '<div id="section-'.$principal->id.'" class="row section" style="background-image: url(\''. $page->images->eq($imgIndex++)->url .'\')"'.
                     'data-center-top="background-position:0px 0px;"'.
                     'data-top-bottom="background-position:0px -500px;"'.
                 '>';

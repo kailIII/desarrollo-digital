@@ -51,13 +51,14 @@ body {
   margin: 0px;
 }
 .section .trama {
-  background-image: url('../img/trama.png');
+  background-image: url('../img/trama2.png');
 }
 .section h1 {
   font-size: 80px;
   color: #ffffff;
   font-family: "gobCLHeavy", Arial, Helvetica, sans-serif;
-  margin: 250px 0px 40px 0px;
+  margin: 250px 0px 10px 0px;
+  text-shadow: 1px 1px #999;
 }
 .section .destacado {
   background-color: rgba(0, 0, 0, 0.6);
@@ -133,6 +134,8 @@ body {
   background-color: #FFFFFF;
   color: #545e69;
   padding: 30px 100px;
+  margin-bottom: 100px;
+  padding-bottom: 60px;
 }
 .secundaria h3 {
   font-size: 30px;
