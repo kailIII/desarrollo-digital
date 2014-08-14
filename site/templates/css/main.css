@@ -47,7 +47,9 @@ body {
   background-color: #f4f2ee;
   background-repeat: no-repeat;
   margin: 0px;
-  padding-bottom: 100px;
+}
+.section .trama {
+  background-image: url('../img/trama.png');
 }
 .section h1 {
   font-size: 80px;
@@ -58,6 +60,7 @@ body {
 .section .destacado {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 40px 0px;
+  margin-bottom: -1px;
 }
 .section p {
   font-size: 30px;
@@ -80,10 +83,10 @@ body {
   background-repeat: no-repeat;
   padding-left: 60px;
   margin: 10px 0px;
-  min-height: 120px;
+  min-height: 150px;
 }
 .section .planes-container .planes .thumbnail .caption {
-  padding-right: 90px;
+  padding-right: 20px;
 }
 .section .planes-container .planes .thumbnail .caption p {
   font-family: "gobCLLight", Arial, Helvetica, sans-serif;
@@ -97,7 +100,7 @@ body {
 .secundaria {
   background-color: #FFFFFF;
   color: #545e69;
-  padding: 50px 100px;
+  padding: 30px 100px;
 }
 .secundaria h3 {
   font-size: 30px;
@@ -105,12 +108,12 @@ body {
   margin-top: 50px;
 }
 .secundaria p {
-  font-size: 20px;
+  font-size: 16px;
   color: #545e69;
   margin-bottom: 20px;
 }
 .secundaria ul li {
-  font-size: 20px;
+  font-size: 16px;
 }
 .navbar-default {
   background: transparent;
