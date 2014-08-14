@@ -84,6 +84,36 @@ body {
   padding-left: 60px;
   margin: 10px 0px;
   min-height: 150px;
+  /* Large Devices, Wide Screens */
+  /* Medium Devices, Desktops */
+  /* Small Devices, Tablets */
+  /* Extra Small Devices, Phones */
+  /* Custom, iPhone Retina */
+}
+@media (max-width: 1200px) {
+  .section .planes-container .planes .thumbnail {
+    min-height: 230px;
+  }
+}
+@media (max-width: 992px) {
+  .section .planes-container .planes .thumbnail {
+    min-height: initial;
+  }
+}
+@media (max-width: 768px) {
+  .section .planes-container .planes .thumbnail {
+    min-height: initial;
+  }
+}
+@media (max-width: 480px) {
+  .section .planes-container .planes .thumbnail {
+    min-height: initial;
+  }
+}
+@media (max-width: 320px) {
+  .section .planes-container .planes .thumbnail {
+    min-height: initial;
+  }
 }
 .section .planes-container .planes .thumbnail .caption {
   padding-right: 20px;
@@ -224,3 +254,15 @@ footer .area2 .politicas {
   margin-top: 10px;
   text-align: right;
 }
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
