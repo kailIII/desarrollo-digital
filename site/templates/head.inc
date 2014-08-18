@@ -4,8 +4,16 @@
 
 	<title><?php echo $page->get("headline|title"); ?></title>
 
-	<meta name="description" content="<?php echo $page->summary; ?>" />
-	<meta name="generator" content="ProcessWire <?php echo $config->version; ?>" />
+    <meta property="og:site_name" content="Desarrollo digital Gobierno de Chile"> 
+	<meta name="description" property="og:description" content="Portal de la política nacional de desarrollo digital destinada a impulsar iniciativas que promuevan la adopción y uso de las tecnologías de información y comunicación por parte de todos los actores de la sociedad cuyo objetivo es contribuir al desarrollo económico, político y social en Chile" />
+
+    <meta name="author" content="Unidad de Modernización y Gobierno Digital, Ministerio Secretaría General de la Presidencia de la República de Chile" />
+ 
+    <meta property="article:publisher" content="http://www.modernizacion.gob.cl" />
+
+    <meta name="generator" content="ProcessWire <?php echo $config->version; ?>" />
+
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
