@@ -208,7 +208,11 @@ body .toTopLink {
   padding: 0px;
   overflow: hidden;
 }
-.navbar-default .logo-chico {
+.navbar-default .scrollToLink {
+  z-index: 1000;
+}
+.navbar-default .scrollToLink .logo-chico {
+  z-index: 1000;
   display: none;
   position: absolute;
 }

@@ -75,7 +75,7 @@ var Frontend;
 			$(".nav a[href=#"+sel+"], #"+sel+"-anchor").addClass('selected');
 		}
 
-		var onTop = $('.toTop');
+		var onTop = $('.toTopLink');
 		if(scroll_top == 0){
 			onTop.hide();
 		}else{
