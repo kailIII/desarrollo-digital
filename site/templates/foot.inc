@@ -59,12 +59,3 @@
 <script type="text/javascript" src="<?php echo $config->urls->templates?>js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo $config->urls->templates?>js/skrollr.min.js"></script>
 <script type="text/javascript" src="<?php echo $config->urls->templates?>js/main.js"></script>
-
-<script type="text/javascript">
-window.____aParams = {"gobabierto":"1","buscadore":"1",};
-(function() {
-var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-po.src = document.location.protocol + '//apis.modernizacion.cl/barra/js/barraEstado.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-})();
-</script>

@@ -34,8 +34,17 @@ var Frontend;
 		});
 
 		if(isSmall){
+			//Menu
 			$('.navbar-default').addClass('sticky').css({ 'position': 'fixed', 'top':0, 'left':0 });
 		}else{
+
+			//Barra de estado
+			window.____aParams = {"gobabierto":"1","buscadore":"1",};
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = document.location.protocol + '//apis.modernizacion.cl/barra/js/barraEstado.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+
+			//Menu
 			Frontend.sticky_navigation_offset_top = $('.navbar-default').offset().top;
 			Frontend.update_nav();
 		}
