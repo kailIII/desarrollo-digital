@@ -33,9 +33,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#header-container {
-  background-image: url('../img/desarrollodigital.png');
-  background-repeat: no-repeat;
+#header-container .logo-grande {
+  position: absolute;
 }
 .navbar {
   margin-bottom: 0px;
@@ -59,6 +58,24 @@ body {
   font-family: "gobCLHeavy", Arial, Helvetica, sans-serif;
   margin: 250px 0px 10px 0px;
   text-shadow: 1px 1px #999;
+  /* Small Devices, Tablets */
+  /* Extra Small Devices, Phones */
+  /* Custom, iPhone Retina */
+}
+@media (max-width: 768px) {
+  .section h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .section h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 320px) {
+  .section h1 {
+    font-size: 30px;
+  }
 }
 .section .destacado {
   background-color: rgba(0, 0, 0, 0.6);
@@ -136,6 +153,24 @@ body {
   padding: 30px 100px;
   margin-bottom: 100px;
   padding-bottom: 60px;
+  /* Small Devices, Tablets */
+  /* Extra Small Devices, Phones */
+  /* Custom, iPhone Retina */
+}
+@media (max-width: 768px) {
+  .secundaria {
+    padding: 30px 40px;
+  }
+}
+@media (max-width: 480px) {
+  .secundaria {
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 320px) {
+  .secundaria {
+    padding: 10px 30px;
+  }
 }
 .secundaria h3 {
   font-size: 30px;
@@ -163,9 +198,40 @@ body {
   padding: 0px;
   overflow: hidden;
 }
+.navbar-default .logo-chico {
+  display: none;
+  position: absolute;
+}
+.navbar-default .navbar-nav {
+  /* Medium Devices, Desktops */
+  /* Extra Small Devices, Phones */
+}
+@media (max-width: 992px) {
+  .navbar-default .navbar-nav {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar-default .navbar-nav {
+    margin-left: 0px;
+  }
+}
 .navbar-default .navbar-nav li a {
   color: #FFFFFF;
   padding: 20px;
+  /* Large Devices, Wide Screens */
+  /* Medium Devices, Desktops */
+}
+@media (max-width: 1200px) {
+  .navbar-default .navbar-nav li a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-default .navbar-nav li a {
+    font-size: 20px;
+    padding: 20px 10px;
+  }
 }
 .navbar-default .navbar-nav li a.selected,
 .navbar-default .navbar-nav li a:hover,
@@ -201,12 +267,19 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
   z-index: 100;
+  min-height: 60px;
 }
 .navbar-default.sticky .navbar-collapse {
   border: none;
 }
 .navbar-default.sticky .container {
   margin-bottom: 0px;
+}
+.navbar-default.sticky .logo-chico {
+  display: block;
+}
+.navbar-default.sticky .navbar-toggle {
+  margin: 13px 0px;
 }
 footer .area1 {
   background: #2C384F;
@@ -220,6 +293,14 @@ footer .area1 .navbar-inverse {
 footer .area1 .navbar-inverse .navbar-nav > li {
   float: left;
   border-left: 1px solid #404C61;
+  /* Small Devices, Tablets */
+}
+@media (max-width: 768px) {
+  footer .area1 .navbar-inverse .navbar-nav > li {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
 }
 footer .area1 .navbar-inverse .navbar-nav > li:last-child {
   border-right: 1px solid #404C61;
@@ -243,7 +324,7 @@ footer .area2 {
 footer .area2 h3 {
   font-weight: bold;
   font-size: 18px;
-  margin: 0;
+  margin: 20px 0px 5px 0px;
 }
 footer .area2 a {
   color: #fff;
@@ -254,6 +335,12 @@ footer .area2 ul {
 footer .area2 .social {
   margin-top: 50px;
   text-align: right;
+  /* Medium Devices, Desktops */
+}
+@media (max-width: 992px) {
+  footer .area2 .social {
+    text-align: center;
+  }
 }
 footer .area2 .politicas {
   margin-top: 10px;

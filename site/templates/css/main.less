@@ -36,8 +36,9 @@ body {
 }
 
 #header-container {
-	background-image: url('../img/desarrollodigital.png');
-	background-repeat: no-repeat;
+	.logo-grande{
+		position: absolute;
+	}
 }
 
 .navbar {
@@ -63,6 +64,20 @@ body {
 		font-family: "gobCLHeavy", Arial, Helvetica, sans-serif;
 		margin: 250px 0px 10px 0px;
 		text-shadow: 1px 1px #999;
+		/* Small Devices, Tablets */
+		@media (max-width : 768px) {
+			font-size: 60px;
+		}
+
+		/* Extra Small Devices, Phones */ 
+		@media (max-width : 480px) {
+			font-size: 45px;
+		}
+
+		/* Custom, iPhone Retina */ 
+		@media (max-width : 320px) {
+			font-size: 30px;
+		}
 	}
 	.destacado {
 		background-color: rgba(0,0,0,0.6);
@@ -136,6 +151,20 @@ body {
 	padding: 30px 100px;
 	margin-bottom: 100px;
 	padding-bottom: 60px;
+	/* Small Devices, Tablets */
+	@media (max-width : 768px) {
+		padding: 30px 40px;
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media (max-width : 480px) {
+		padding: 10px 30px;
+	}
+
+	/* Custom, iPhone Retina */ 
+	@media (max-width : 320px) {
+		padding: 10px 30px;
+	}
 	h3 {
 		font-size: 30px;
 		font-family: "gobCLHeavy", Arial, Helvetica, sans-serif;
@@ -165,11 +194,35 @@ body {
 		padding: 0px;
 		overflow: hidden;
 	}
+	.logo-chico{
+		display: none;
+		position: absolute;
+	}
 	.navbar-nav {
+		/* Medium Devices, Desktops */
+		@media (max-width : 992px) {
+			margin-left: 100px;
+		}
+		/* Extra Small Devices, Phones */ 
+		@media (max-width : 480px) {
+			margin-left: 0px;
+		}
+
 		li {
 			a {
 				color: #FFFFFF;
 				padding: 20px;
+				/* Large Devices, Wide Screens */
+				@media (max-width : 1200px) {
+					font-size: 20px;		
+				}
+
+				/* Medium Devices, Desktops */
+				@media (max-width : 992px) {
+					font-size: 20px;
+					padding: 20px 10px;
+				}
+
 				&.selected,
 				&:hover,
 				&:focus{
@@ -214,11 +267,18 @@ body {
 		width: 100%;
 		background: rgba(0, 0, 0, 0.7);
 		z-index: 100;
+		min-height: 60px;
 		.navbar-collapse {
 			border: none;
 		}
 		.container {
 			margin-bottom: 0px;
+		}
+		.logo-chico{
+			display: block;
+		}
+		.navbar-toggle{
+			margin: 13px 0px;
 		}
 	}
 }
@@ -234,20 +294,26 @@ footer {
 		.navbar-nav>li{
 			float: left;
 	        border-left: 1px solid #404C61;
+          	/* Small Devices, Tablets */
+			@media (max-width : 768px) {
+				width: 100%;
+				display: block;
+				text-align: center;
+			}
 	        &:last-child {
 	          border-right: 1px solid #404C61;
 	        }
 		}
 		.navbar-nav>li>a {
-          display: block;
-          padding: 20px 35px;
-          color: #fff;
-          font-size: 16px;
-          line-height: 26px;
-          &:hover {
-            text-decoration: none;
-            background: #1B2437;
-          }
+			display: block;
+			padding: 20px 35px;
+			color: #fff;
+         	font-size: 16px;
+          	line-height: 26px;
+			&:hover {
+				text-decoration: none;
+				background: #1B2437;
+			}
 		}
 	}
   }
@@ -258,7 +324,7 @@ footer {
     h3 {
       font-weight: bold;
       font-size: 18px;
-      margin: 0;
+      margin: 20px 0px 5px 0px;
     }
     a {
       color: #fff;
@@ -267,8 +333,12 @@ footer {
       padding-left: 15px;
     }
     .social {
-      margin-top: 50px;
-      text-align: right;
+      	margin-top: 50px;
+      	text-align: right;
+		/* Medium Devices, Desktops */
+		@media (max-width : 992px) {
+			text-align: center;
+		}
     }
     .politicas {
       margin-top: 10px;

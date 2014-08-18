@@ -24,20 +24,26 @@
     <div class="area2">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6">
-                    <a href="http://www.minsegpres.gob.cl" target="_blank"><img src="site/templates/img/minsegpres.png" alt="Ministerio Secretaría General de la Presidencia"></a>
-                    <a href="http://www.dipres.gob.cl" target="_blank"><img src="site/templates/img/dipres.png" alt="Dirección de Presupuestos"></a>
-                    <a href="http://www.dipres.gob.cl" target="_blank"><img src="site/templates/img/dipres.png" alt="Dirección de Presupuestos"></a>
-                    <a href="http://www.dipres.gob.cl" target="_blank"><img src="site/templates/img/dipres.png" alt="Dirección de Presupuestos"></a>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img class="img-responsive" src="site/templates/img/desarrollodigital.png" alt="Desarrollo Digital">
+                        </div>
+                        <div class="col-xs-8">
+                            <h3>Desarrollo digital:</h3>
+                            <ul>
+                                <li>Ministerio Secretaría General de la Presidencia</li>
+                                <li>Ministerio de Transporte y Telecomunicaciones</li>
+                                <li>Ministerio de Economía, Fomento y Turismo</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-md-6">
                     <div class="social">
                         <a target="_blank" href="https://twitter.com/modernizacioncl"><img src="site/templates/img/social/twitter.png" alt="Twitter"></a>
                         <a target="_blank" href="https://www.facebook.com/ModernizacionyGobiernoDigital"><img src="site/templates/img/social/facebook.png" alt="Facebook"></a>
                         <a target="_blank" href="https://github.com/e-gob"><img src="site/templates/img/social/github.png" alt="Github"></a>
-                    </div>
-                    <div class="politicas">
-                        <a href="#">Politicas de Privacidad</a> | <a href="">Visualizadores y Plugins</a> | <a href="#">CC</a>
                     </div>
                 </div>
             </div>

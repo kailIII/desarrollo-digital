@@ -15,6 +15,13 @@ var Frontend;
 	Frontend.env = '';
 
 	Frontend.init = function(){
+
+		Frontend.env = this.getBootstrapEnvironment();
+
+		var isSmall = ($.inArray( Frontend.env, ["ExtraSmall", "Small"] ) > -1);
+
+		console.log();
+
 		//Headings
 		$('.section').each(function(i,e){
 			Frontend.initial_pos.push({name:e.id,value:$('#'+e.id).offset().top});
@@ -23,23 +30,26 @@ var Frontend;
 		//scroll event
 		$(window).scroll(function() {
 			Frontend.update_menu();
-			Frontend.update_nav();
+			if(!isSmall){
+				Frontend.update_nav();
+			}
 		});
 
-		Frontend.sticky_navigation_offset_top = $('.navbar-default').offset().top;
-
-		Frontend.update_nav();
+		if(isSmall){
+			$('.navbar-default').addClass('sticky').css({ 'position': 'fixed', 'top':0, 'left':0 });
+		}else{
+			Frontend.sticky_navigation_offset_top = $('.navbar-default').offset().top;
+			Frontend.update_nav();
+		}
 
 		Frontend.scrollToLink();
 
-		Frontend.env = this.getBootstrapEnvironment();
-
-		if($.inArray( Frontend.env, ["ExtraSmall", "Small"] ) < 0){
+		if(isSmall){
+			$('.section').css('background-size','cover');
+		} else {
 			skrollr.init({
 				forceHeight: false,
 			});
-		} else {
-			$('.section').css('background-size','cover');
 		}
 
 	};
@@ -76,7 +86,7 @@ var Frontend;
 	            $target = $target.length && $target;
 	            $('body').click(); // quita el foco del menú.
 	            if ($target.length) {
-	            	if($('.navbar-header button').is(':visible')) {
+	            	if($('.navbar-collapse.in').size()) {
 					    $('.navbar-header button').click();
 					}
 	            	var offset = ($(this).hasClass('scrollToLinkSecundaria'))?-100:100;

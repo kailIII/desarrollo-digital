@@ -15,6 +15,7 @@
                 <div class="trama">
 
                     <div id="header-container" class="container">
+                        <img class="logo-grande hidden-xs hidden-sm" src="/site/templates/img/desarrollodigital.png" alt="Desarrollo Digital" />
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
                                 <h1><?php echo $page->title;?></h1>
@@ -33,6 +34,7 @@
                         <div class="navbar-placeholder">
                             <div class="navbar navbar-default" role="navigation">
                                 <div class="container">
+                                    <img class="logo-chico" src="/site/templates/img/desarrollodigital_menu.png" alt="Desarrollo Digital" />
                                     <div class="row">
                                         <div class="col-md-8 col-md-offset-2">
                                             <div class="navbar-header">
