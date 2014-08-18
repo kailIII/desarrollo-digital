@@ -60,7 +60,7 @@
                                                             $menu .= "<li class='dropdown'>
                                                                         <a id='section-{$principal->id}-anchor' href='javascript:;' class='dropdown-toggle' data-toggle='dropdown'>$principal->title<span class='caret'></span></a>
                                                                         <ul class='dropdown-menu' role='menu'>";
-                                                            $menu .=     "<li><a class='scrollToLink' href='#section-{$principal->id}'>Introducción</a></li>";
+                                                            $menu .=     "<li><a class='scrollToLink' href='#section-{$principal->id}'>Descripción</a></li>";
                                                         }else{
                                                             $menu .= "<li><a class='scrollToLink' href='#section-{$principal->id}'>{$principal->title}</a></li>";
                                                         }
