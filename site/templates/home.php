@@ -35,7 +35,9 @@
                         <div class="navbar-placeholder">
                             <div class="navbar navbar-default" role="navigation">
                                 <div class="container">
-                                    <img class="logo-chico" src="/site/templates/img/desarrollodigital_menu.png" alt="Desarrollo Digital" />
+                                    <a href="#section-<?php echo $page->id; ?>" class="scrollToLink toTop">
+                                        <img class="logo-chico" src="/site/templates/img/desarrollodigital_menu.png" alt="Desarrollo Digital" />
+                                    </a>
                                     <div class="row">
                                         <div class="col-md-8 col-md-offset-2">
                                             <div class="navbar-header">
@@ -138,7 +140,17 @@
 
         <?php include("./foot.inc"); ?>
 
-        <a href="#section-<?php echo $page->id; ?>" class="scrollToLink toTop"><img src="/site/templates/img/ico_subir.png" alt="Ir arriba" /></a>
+        <a href="#section-<?php echo $page->id; ?>" class="scrollToLink toTop toTopLink"><img src="/site/templates/img/ico_subir.png" alt="Ir arriba" /></a>
+
+        <script type="text/javascript">
+        window.____aParams = {"gobabierto":"1","buscadore":"1",};
+        (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = document.location.protocol + '//apis.modernizacion.cl/barra/js/barraEstado.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+        </script>
+
 
     </body>
 </html>
