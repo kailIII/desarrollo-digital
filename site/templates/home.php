@@ -6,6 +6,7 @@
     <?php include("./head.inc"); ?>
 
     <body>
+
             <!-- Main Section -->
             <div id="section-<?php echo $page->id; ?>" class="section"
                 style="background-image: url('<?php echo $page->images->first()->url; ?>')"
@@ -136,6 +137,8 @@
             ?>
 
         <?php include("./foot.inc"); ?>
+
+        <a href="#section-<?php echo $page->id; ?>" class="scrollToLink toTop"><img src="/site/templates/img/ico_subir.png" alt="Ir arriba" /></a>
 
     </body>
 </html>

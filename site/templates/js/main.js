@@ -20,8 +20,6 @@ var Frontend;
 
 		var isSmall = ($.inArray( Frontend.env, ["ExtraSmall", "Small"] ) > -1);
 
-		console.log();
-
 		//Headings
 		$('.section').each(function(i,e){
 			Frontend.initial_pos.push({name:e.id,value:$('#'+e.id).offset().top});
@@ -67,6 +65,15 @@ var Frontend;
 		if($(".nav a[href=#"+sel+"]").size()){
 			$(".nav a[href=#"+sel+"], #"+sel+"-anchor").addClass('selected');
 		}
+
+		var onTop = $('.toTop');
+		if(scroll_top == 0){
+			onTop.hide();
+		}else{
+			if(!onTop.is(':visible')){
+				onTop.delay( 500 ).fadeIn();
+			}
+		}
 	};
 
 	Frontend.update_nav = function(){
@@ -90,7 +97,7 @@ var Frontend;
 					    $('.navbar-header button').click();
 					}
 	            	var offset = ($(this).hasClass('scrollToLinkSecundaria'))?-100:100;
-	                var targetOffset = $target.offset().top + offset;
+	                var targetOffset = ($(this).hasClass('toTop'))?0:$target.offset().top + offset;
 	                $('html,body').animate({ scrollTop: targetOffset }, 1000); //set scroll speed here
 	                return false;
 	            }
