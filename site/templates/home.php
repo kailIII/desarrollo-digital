@@ -131,24 +131,24 @@
                         echo '</div>';
 
                         echo '<img class="card" src="/site/assets/files/1030/agenda-digital-capitulo_01.png" />';
-                        echo '<div class="download-card"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_25 NOVIEMBRE_DEF-cap1.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
-                        echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 1</p><p class="titulo"><strong>Derechos Para el Desarrollo Digital</strong></p><p>Documento PDF, 722KB</p></span></div>';
+                        echo '<div class="download-card"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Capitulo 1 - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 1</p><p class="titulo"><strong>Derechos Para el Desarrollo Digital</strong></p><p>Documento PDF, 534KB</p></span></div>';
                         
                         echo '<img class="card" src="/site/assets/files/1030/agenda-digital-capitulo_02.png" />';
-                        echo '<div class="download-card"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_25 NOVIEMBRE_DEF-cap2.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
-                        echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 2</p><p class="titulo"><strong>Conectividad Digital</strong></p><p>Documento PDF, 755KB</p></span></div>';
+                        echo '<div class="download-card"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Capitulo 2 - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 2</p><p class="titulo"><strong>Conectividad Digital</strong></p><p>Documento PDF, 558KB</p></span></div>';
 
                         echo '<img class="card" src="/site/assets/files/1030/agenda-digital-capitulo_03.png" />';
-                        echo '<div class="download-card"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_25 NOVIEMBRE_DEF-cap3.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
-                        echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 3</p><p class="titulo"><strong>Gobierno Digital</strong></p><p>Documento PDF, 823KB</p></span></div>';
+                        echo '<div class="download-card"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Capitulo 3 - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 3</p><p class="titulo"><strong>Gobierno Digital</strong></p><p>Documento PDF, 623KB</p></span></div>';
 
                         echo '<img class="card" src="/site/assets/files/1030/agenda-digital-capitulo_04.png" />';
-                        echo '<div class="download-card"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_25 NOVIEMBRE_DEF-cap4.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
-                        echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 4</p><p class="titulo"><strong>Economía Digital</strong></p><p>Documento PDF, 835KB</p></span></div>';
+                        echo '<div class="download-card"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Capitulo 4 - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 4</p><p class="titulo"><strong>Economía Digital</strong></p><p>Documento PDF, 635KB</p></span></div>';
 
                         echo '<img class="card" src="/site/assets/files/1030/agenda-digital-capitulo_05.png" />';
-                        echo '<div class="download-card"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_25 NOVIEMBRE_DEF-cap5.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
-                        echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 5</p><p class="titulo"><strong>Competencias Digitales</strong></p><p>Documento PDF, 845KB</p></span></div>';
+                        echo '<div class="download-card"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Capitulo 5 - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 5</p><p class="titulo"><strong>Competencias Digitales</strong></p><p>Documento PDF, 647KB</p></span></div>';
 
                     } elseif (strtolower($secundaria->title) == "integrantes del comité"){
                         echo '<div class="content-block">';
@@ -166,17 +166,17 @@
                         echo '<h3 id="section-'.$secundaria->id.'">'.$secundaria->title.'</h3>';
                        
                         
-                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_25 NOVIEMBRE_DEF-cap1.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Capitulo 1 - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
                         echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 1</p><p class="titulo"><strong>Derechos Para el Desarrollo Digital</strong></p><p>Documento PDF</p></span></div>';
-                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_25 NOVIEMBRE_DEF-cap2.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Capitulo 2 - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
                         echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 2</p><p class="titulo"><strong>Conectividad Digital</strong></p><p>Documento PDF</p></span></div>';
-                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_25 NOVIEMBRE_DEF-cap3.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Capitulo 3 - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
                         echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 3</p><p class="titulo"><strong>Gobierno Digital</strong></p><p>Documento PDF</p></span></div>';
-                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_25 NOVIEMBRE_DEF-cap4.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Capitulo 4 - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
                         echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 4</p><p class="titulo"><strong>Economía Digital</strong></p><p>Documento PDF</p></span></div>';
-                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_25 NOVIEMBRE_DEF-cap5.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Capitulo 5 - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
                         echo '<span class="pull-left"><p>AGENDA DIGITAL, Capítulo 5</p><p class="titulo"><strong>Competencias Digitales</strong></p><p>Documento PDF</p></span></div>';
-                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital_26 DE NOV-v8.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
+                        echo '<div class="download-card single"><a target="_blank" href="/site/assets/files/1030/Agenda Digital Gobierno de Chile - Noviembre 2015.pdf"><img class="pull-left" src="/site/assets/files/1030/ico-descarga.png" /></a>';
                         echo '<span class="pull-left"><p>AGENDA DIGITAL</p><p class="titulo"><strong>Documento Completo</strong></p><p>Documento PDF, 1,7MB</p></span></div><br/>';
 
                          echo '</div><br/>';

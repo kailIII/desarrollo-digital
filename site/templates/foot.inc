@@ -24,17 +24,26 @@
     <div class="area2">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="row">
-                        <div class="col-xs-4">
+                        <div class="col-xs-2">
                             <img class="img-responsive" src="site/templates/img/desarrollodigital.png" alt="Desarrollo Digital">
                         </div>
-                        <div class="col-xs-8">
+                        <div class="col-xs-5">
                             <h3>Desarrollo digital:</h3>
                             <ul>
                                 <li>Ministerio Secretaría General de la Presidencia</li>
                                 <li>Ministerio de Transporte y Telecomunicaciones</li>
                                 <li>Ministerio de Economía, Fomento y Turismo</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-5">
+                            <h3>Fotografías:</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.flickr.com/people/avasquezn/" target="_blank">Alejandro Vasquez (Fondo 1)</a></li>
+                                <li><a href="https://www.flickr.com/people/marcesepu/" target="_blank">Marce! (Fondo 2)</a></li>
+                                <li><a href="https://www.flickr.com/people/alexhdr77/" target="_blank">Alessandro Casagrande (Fondo 3)</a></li>
+                                <li><a href="https://www.flickr.com/people/mauriciobusmatamte/" target="_blank">Mauricio Bustamante (Fondo 4)</a></li>
                             </ul>
                         </div>
                     </div>
